@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To Do App</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="header">
+        <img src="./Screenshot (113).png" alt="ToDo" height="60px" width="auto">
+    </div>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">
+        <div class="icon">📝</div>
+        <h1>TODO</h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." id="search" />
+      </div>
+      <ul class="todo-list" id="todoList">
+        <!-- To-do items inserted here via JavaScript -->
+      </ul>
+    </aside>
+
+    <main class="editor">
+      <div class="editor-header">
+        <h2 id="noteTitle">New Additions</h2>
+        <button class="trash">🗑️</button>
+      </div>
+      <div class="toolbar">
+        <button><b>B</b></button>
+        <button><i>U</i></button>
+        <button>≡</button>
+        <button>•</button>
+        <button>1.</button>
+        <button id="alignLeft" class="toolbar-button" title="Align Left"><i class="fas fa-align-left"></i></button>
+        <button id="alignCenter" class="toolbar-button" title="Align Center"><i class="fas fa-align-center"></i></button>
+        <button id="alignRight" class="toolbar-button" title="Align Right"><i class="fas fa-align-right"></i></button>
+        <button class="toolbar-button" id="colorPickerBtn" title="Text Color">🎨</button>
+        <input type="color" id="colorInput" style="display: none;" />
+        <!-- <button>🖉</button> -->
+        <button>¶</button>
+      </div>
+      <div class="editor-content" contenteditable="true">
+        To stay representative of framework & new example apps.
+      </div>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
